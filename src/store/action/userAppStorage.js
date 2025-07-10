@@ -138,7 +138,7 @@ export const loginAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`https://www.cargoroute.site/adminlogin`, {
+      let response = await fetch(`https://cargoroute.site/adminlogin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -199,7 +199,7 @@ export const signupAdmin = (data) => {
   let dataObj = data
   return async (dispatch, getState) => {
     try {
-      let response = await fetch(`https://www.cargoroute.site/adminsignup`, {
+      let response = await fetch(`https://cargoroute.site/adminsignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -276,7 +276,7 @@ export const fetchCossignments = ()=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://www.cargoroute.site/cosignments`, {
+      let response = await fetch(`https://cargoroute.site/cosignments`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -327,7 +327,7 @@ export const deleteCossignment = (id)=>{
     } = getState().userAuth
 //
     try {
-      let response = await fetch(`https://www.cargoroute.site/cosignments/${id}`, {
+      let response = await fetch(`https://cargoroute.site/cosignments/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -376,7 +376,7 @@ export const updateCossignment = (data)=>{
       token
     } = getState().userAuth
     try {
-      let response = await fetch(`https://www.cargoroute.site/cosignments/${data._id}`, {
+      let response = await fetch(`https://cargoroute.site/cosignments/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -429,7 +429,7 @@ export const createCossignment = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://www.cargoroute.site/cosignment`, {
+      let response = await fetch(`https://cargoroute.site/cosignment`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -489,7 +489,7 @@ export const fetchHistories = (id)=>{
   
 
     try {
-      let response = await fetch(`https://www.cargoroute.site/histories/${id}`, {
+      let response = await fetch(`https://cargoroute.site/histories/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -540,7 +540,7 @@ export const deleteHistory = (id)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://www.cargoroute.site/history/${id}`, {
+      let response = await fetch(`https://cargoroute.site/history/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -589,7 +589,7 @@ export const updateHistory = (data)=>{
       token
     } = getState().userAuth
     try {
-      let response = await fetch(`https://www.cargoroute.site/histories/${data._id}`, {
+      let response = await fetch(`https://cargoroute.site/histories/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -640,7 +640,7 @@ export const createHistory = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://www.cargoroute.site/history`, {
+      let response = await fetch(`https://cargoroute.site/history`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -695,7 +695,7 @@ export const updateAdmin = (data)=>{
     } = getState().userAuth
 
     try {
-      let response = await fetch(`https://www.cargoroute.site/admin/${data._id}`, {
+      let response = await fetch(`https://cargoroute.site/admin/${data._id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -744,7 +744,7 @@ export const updateAdmin = (data)=>{
 
 //https://track-admin-backend.onrenderll.com
 
-//https://www.cargoroute.site
+//https://cargoroute.site
 
 export const sendEmail = (data)=>{
   return async (dispatch, getState) => {
@@ -752,7 +752,7 @@ export const sendEmail = (data)=>{
       token
     } = getState().userAuth
     try {
-      let response = await fetch(`https://www.cargoroute.site/sendemail`, {
+      let response = await fetch(`https://cargoroute.site/sendemail`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
